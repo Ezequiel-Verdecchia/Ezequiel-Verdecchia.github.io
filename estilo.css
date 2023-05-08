@@ -156,8 +156,8 @@ i:hover{
       display: block;
       width: 80%;
       margin: auto;
-      border-radius: 100%;
-      position: relative;
+      border-radius: 50%;
+      position: inherit;
       z-index: 100;
       
       
