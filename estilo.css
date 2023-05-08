@@ -4,6 +4,7 @@
     font-family: 'Work Sans';
     margin: 0;
     padding: 0;
+    width: auto;
 }
 html{
     /* me permite deslizar cuando hago clic en los links del menu */
