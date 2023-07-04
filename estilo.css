@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap'); */
 *{
     box-sizing: border-box;
     font-family: 'Work Sans';
     margin: 0;
     padding: 0;
     width: auto;
+   
 }
 html{
     /* me permite deslizar cuando hago clic en los links del menu */
@@ -91,7 +92,7 @@ transform: scale(3.0);
     font-size: 74px;
     transform: rotate(-30deg);
 
-}
+} 
 i{
     color: rgba(0, 0,0, 0.5);
     transition: 2px; 
@@ -106,7 +107,7 @@ i:hover{
     color: #0f0;
     text-shadow: 0 0 120px #0f0;
 }
-.row div{
+ .row div{
 
     animation: animate1 80s linear infinite;
     animation-delay: -80s;
@@ -114,9 +115,9 @@ i:hover{
 .row div:nth-child(2){
     animation: animate2 80s linear infinite;
     animation-delay: -40s;
-}
+} 
 
-@keyframes animate1{
+ @keyframes animate1{
     0%
     {
         transform: translate(100%);
@@ -137,16 +138,16 @@ i:hover{
     {
         transform: translate(-200%);
     }
-}
+} 
 
 
 .inicio .contenido-banner {
  box-sizing: border-box;
- width: 30%;
- padding:86px;
+ width: 50%;
+ padding:100px;
  position: absolute;
- bottom: 4em; left: 35%;
- top: 230px;
+  left: 25%;
+
     
 }
 
