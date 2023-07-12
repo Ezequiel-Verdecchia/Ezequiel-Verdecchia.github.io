@@ -1,72 +1,63 @@
-/*bandera*/
+//toggle icon navbar
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-
-let menuVisible = false;
-//Función que oculta o muestra el menu
-function mostrarOcultarMenu(){
-    if(menuVisible){
-        document.getElementById("nav").classList ="";
-        menuVisible = false;
-    }else{
-        document.getElementById("nav").classList ="responsive";
-        menuVisible = true;
-    }
-}
-
-// function seleccionar(){
-//     //oculto el menu una vez que selecciono una opcion
-//     document.getElementById("nav").classList = "";
-//     menuVisible = false;
-// }
-// //buscamos el canvas usando el id
-// const canvas = document.getElementById("canv");
-// //ahora seleccionamos su contexto y nos guardamos su ancho y su alto
-// const ctx = canvas.getContext("2d");
-// const w = canvas.width = document.body.offsetWidth;
-// const h = canvas.height = document.body.offsetHeight;
-// //dividimos el lienzo a utilizar en columnas y comenzamos a pintar desde arriba, arranca en 0
-// const cols = Math.floor(w/20)+1;
-// const ypos = Array(cols).fill(0);
-// //ahora seleccionamos un color para pintar y lo pintamos entero
-// ctx.fillStyle ="#000";
-// ctx.fillRect(0, 0, w, h);
- 
-// function SVGFEColorMatrixElement(){
-// ctx.fillStyle = "#0001";
-// ctx.fillRect ="15pt monospace";
-// ypos.forEach((y,ind)=>{
-//     const text = string.fromCharCode(Math.random()* 128);
-//     const x = ind * 20 ;
-//     ctx.fillText(text, x, y);
-//     if(y > 100 + Math.random()* 10000) ypos [ind] = 0;
-//     else ypos [ind] = y + 20;
-// })
-// }
-// setInterval(matrix)
+menuIcon.onclick = () => {
+   menuIcon.classList.toggle('bx-x');
+   navbar.classList.toggle('active');
+};
 
 
 
 
 
-/*const container = document.querySelector('.inicio')
-const colors = ['#CB51EE', '#0073BC', '#38B75E', '#DE365C']
+//scroll section active link
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
-const figures = () => {
-    for(let i = 0; i <= 50; i++){
-        let figure = document.createElement('span')
-        let select = Math.round(colors.length * Math.random())
+window.onscroll = () => {
+     sections.forEach(sec => {
+          let top = window.scrollY;
+          let offset = sec.offsetTop - 150;
+          let height = sec.offsetHeight;
+          let id = sec.getAttribute('id');
 
-        figure.style.top = innerHeight * Math.random() + 'px'
-        figure.style.left = innerWidth * Math.random() + 'px'
-        figure.style.background = colors[select >= colors.length ? select - 1 : select]
+          if(top >= offset && top < offset + height) {
+               navLinks.forEach(links => {
+                    links.classList.remove('active');
+                    document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+               });
+          };
+     });
+ //sticky navbar
+ let header = document.querySelector('header');
 
-        container.appendChild(figure)
+ header.classList.toggle('sticky', window.scrollY > 100);
 
-        setInterval(() => {
-            figure.style.top = innerHeight * Math.random() + 'px'
-            figure.style.left = innerWidth * Math.random() + 'px'
-        }, 5000)
-    }
-}
+ //remove toggle icon and navbar when click navbar link(scroll)
+ menuIcon.classList.remove('bx-x');
+ navbar.classList.remove('active');
 
-figures()*/
+};
+
+//scroll reveal
+ScrollReveal({ 
+     reset:true,
+     distance: '80px',
+     duration: 2000,
+     delay:200
+});
+
+ScrollReveal().reveal('.home-content,.heading', {origin:'top'});
+ScrollReveal().reveal('.home-img , .services-container , .porfolio-box, .contact form', {origin:'bottom'});
+ScrollReveal().reveal('.home-content h1, .about-img', {origin:'left'});
+ScrollReveal().reveal('.home-content p, .about-content', {origin:'right'});
+
+//typed js
+const typed = new Typed('.multiple-text',{
+     strings:['ASP.NET','C#','HTML','CSS','JAVASCRIPT'],
+     typeSpeed: 100,
+     backSpeed: 100,
+     backDelay: 1000,
+     loop: true
+});

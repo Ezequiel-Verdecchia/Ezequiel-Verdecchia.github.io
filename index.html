@@ -2,9 +2,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    
+    <meta name ="viewport" content= " width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="estilo.css" >
-   
+    <link rel="stylesheet" type="text/css" href="estilo.css" >
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
  
    
@@ -14,336 +16,226 @@
     
      
  
-<!-- Menu -->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">HOLA!!!!</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <!--<li><a href="#porfolio"onclick="seleccionar()">PORFOLIO</a></li>-->
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                    <li><a href="#cv" onclick="seleccionar()">CV</a></li>
-                </ul>
+         <!-- Menu section -->
+   
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+
+            <i class='bx bx-menu' id="menu-icon"></i>
+           
+
+            <nav class="navbar">
+                
+                    <a href="#home" class="active" >Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services" >Services</a>
+                    <a href="#portfolio" >Portfolio</a>
+                    <a href="#contact" >Contact</a>
             </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+        
             
         </header>
         
-    </div>
-            
-<!-- Inicio -->
-<section id="inicio" class="inicio">
-    
-    <!-- <div class="row"><div>hola</div></div> -->
-    
-    <div class="contenido-banner">
-        <div class="contenedor-imagen">
-            <img src="img/IMG-20220522-WA0006_2.jpg" alt="">
-        </div>
-         <h1>EZEQUIEL VERDECCHIA</h1>
-         
-         <h2>Analista Programador en Desarrollo de Aplicaciones</h2>
-        </div>
    
-    <!--<div class="contenido-banner">
-        <div class="contenedor-imagen">
-           <img src="img/IMG-20220522-WA0006_2.jpg" alt="">
-        </div>
-        <h1>EZEQUIEL VERDECCHIA</h1>
-        <h2>Analista Programador en Desarrollo de Aplicaciones</h2>
-        <div class="redes">
+            
+ <!--home section -->
+  <section class="home" id="home">
+    
+    <div class="home-content">
+        <h3>HELLO, IT'S ME</h3>
+         <h1>EZEQUIEL VERDECCHIA</h1>
+         <h3>And I'am Backend Developer in </br> <span class="multiple-text"></span></h3>
+         <p>I graduated as a systems development analyst </p>
+        
+        <div class="social-media">
             <a target="_blank" href= "https://www.linkedin.com/in/ezequiel-verdecchia-398527196/"><i class="fa-brands fa-linkedin"></i></a>
             <a target="_blank" href="https://www.instagram.com/ezequiel.verdecchia/"><i class="fa-brands fa-instagram"></i></a>
             <a  target="_blank" href=" https://walink.co/51e078>"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>-->
-</section>
+        </div>
+        <a href="https://drive.google.com/file/d/1Fme-d_L88hJUbJiR2lwrXPMnoVQdeMfy/view?usp=sharing"target="_blank" class="btn">Download CV<i class="fa-solid fa-download"></i></a>
+    </div>
+       
+        
+        </div>
+        <div class="home-img">
+            <img src="img/yo-removebg-preview.png" alt="logo.">
+        </div>
+
+   
+  
+   </section>
 
     
-   <!-- Sobre mi -->
-   <section id="sobremi" class="sobremi">
-    <div class="contenido-section">
-        <h2>Sobre mi</h2>
-        <br>
-       <p><span>HOLA, ME LLAMO EZEQUIEL VERDECCHIA, Tengo 26 años de edad estoy en busqueda de mi primer trabajo como desarrollador, tengo muchas ganas en aprender dia a dia con un trabajo que me ayude crecer tanto intelectual como economicamente.</span></p>
-       <div class="fila">
-        <!-- datos personales -->
-        <div class="col">
-            <br>
-            <h3>Datos Personales:</h3>
-            <ul>
-                <li>
-                    <strong>Cumpleaños</strong>
-                    11-03-1997
-                </li>
-                <li>
-                    <strong>Teléfono</strong>
-                    1133790221
-                </li>
-                <li>
-                    <strong>Email</strong>
-                    ezequieltrabajo97@gmail.com<br><strong> </strong><br><strong></strong>
-                    ezequieltrabajo97@hotmail.com 
-                  
-                </li>
-                <!--<li>
-                    <strong>Website</strong>
-                    www.example.com
-                </li>-->
-                <li>
-                    <strong>Dirección</strong>
-                    Remedios de escalada, Argentina.
-                </li>
-                <li>
-                    <strong>Cargo</strong>
-                    <span>Analista Programador en Desarrollo de Aplicaciones</span>
-                </li>
-            </ul>
+   <!--about me section-->
+ <section class="about" id="about">
+    <div class="about-img">
+        <img src="img/yo-removebg-preview.png" alt="" >
+    </div>
+    <div class="about-content">
+        <h2 class="heading">About<span>Me</span></h2>
+        <h3>Backend Developer!</h3>
+      <p>HELLO, MY NAME IS EZEQUIEL VERDECCHIA, I am 26 years old, I am looking for my first job as a developer,
+         I really want to learn every day with a job that helps me grow both intellectually and economically.</p>
+     <a href="#" class="btn">Read More</a>
+    </div>
+  </section>
+
+
+  <!-- Skills section-->
+  <section class="services" id="services">
+    
+    <h2 class="heading">Our <span>Services</span></h2>
+        <div class="services-container">
+
+            <div class="services-box">
+               <i class="fa-sharp fa-solid fa-c" style="color: #a64fcf;"></i>
+               <h3 style="color: #a64fcf;">#</h3></br></br></br>
+                <p>Academic projects using the C# language with the ASP.NET framework and the MVC architecture.
+                </p>
+                <a href="#" class="btn">Read More</a> 
+           </div>
+        
+       
+        <div class="services-box">
+            <i class='bx bx-code-alt'></i></br>
+            <h3>Framework</h3>
+             <p>ASP.NET MVC, Development of WEB APPS and desktop forms in C# with the ASP.NET MVC AND CORE framework.
+                I also use the visual studio code and visual studio environments.
+                
+            </p>
+             <a href="#" class="btn">Read More</a> 
+        </div>
+     
+
+     <div class="services-box">
+        <i class='bx bx-code-alt'></i>
+        <h3>Computer skills</h3>
+         <p>I also use HTML, CSS, JAVASCRIPT technologies and I have knowledge in object-oriented programming, agile methodologies example: SCRUM.
+            And MYSQL relational database in SQL SERVER.</p>
+         <a href="#" class="btn">Read More</a> 
+    </div>
+ </div>
+
+</section>
+
+<!--portfolio section-->
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest<span>Project</span></h2>
+
+    <div class="portfolio-container">
+
+        <div class="portfolio-box">
+            <img src="img/imagen-primer-plano-programador-trabajando-su-escritorio-oficina.jpg" alt="imagenDeProyecto1">
+            <div class="portfolio-layer">
+                <h4>Website</h4>
+                <p>Final Project of the Professional Practice matter.</br>
+                    Technology used:
+                      C# language, ASP.NET Core v3.1 Framework, CSS3 and HTML5.
+                </p>
+                <a href="https://github.com/Ezequiel-Verdecchia/TiendaDeCerveceria/tree/master/Cerveceria.Web/Cerveceria.Web"><i class='bx bx-link-external'></i></a>
+            </div> 
         </div>
 
-        <!-- intereses -->
-        <div class="col">
-            <h3>Intereses</h3>
-            <div class="contenedor-intereses">
-                <div class="interes">
-                    <i class="fa-solid fa-gamepad"></i>
-                    <span>JUEGOS</span>
-                </div>
-                <div class="interes">
-                    <i class="fa-solid fa-headphones"></i>
-                    <span>MUSICA</span>
-                </div>
-                <div class="interes">
-                    <i class="fa-solid fa-plane"></i>
-                    <span>VIAJAR</span>
-                </div>
-               
-                <div class="interes">
-                    <i class="fa-sharp fa-solid fa-bicycle"></i>
-                    <span>DEPORTE</span>
-                </div>
-                <div class="interes">
-                    <i class="fa-solid fa-book"></i>
-                    <span>LIBROS</span>
-                </div>
-               
-               
-                
+         <div class="portfolio-box">
+            <img src="img/imagen-primer-plano-programador-trabajando-su-escritorio-oficina.jpg" alt="imagenDeProyecto2">
+            <div class="portfolio-layer">
+                <h4>DatabaseAndSearch with ASP.NET</h4>
+                <p>Final Project of the subject Advanced Programming.</br>
+                    Technology used:
+                    C# language, ASP.NET Core v3.1 Framework and Windows Form.
+                </p>
+                <a href="https://github.com/Ezequiel-Verdecchia/BaseDeDatos"><i class='bx bx-link-external'></i></a>
             </div>
         </div>
+
+        <div class="portfolio-box">
+            <img src="img/imagen-primer-plano-programador-trabajando-su-escritorio-oficina.jpg" alt="imagenDeProyecto3">
+            <div class="portfolio-layer">
+                <h4>APP for the management of a company</h4>
+                <p>Final Project of the Seminar subject.</br>
+                    Technology used:
+                    C# language, ASP.NET Core v3.1 Framework and SQL queries.
+                </p>
+                <a href="https://github.com/Ezequiel-Verdecchia/UmbrellaCorpGestion/tree/main/UmbrellaCorpGestion"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="img/imagen-primer-plano-programador-trabajando-su-escritorio-oficina.jpg"alt="imagenDeProyecto4">
+            <div class="portfolio-layer">
+                <h4>Portfolio</h4>
+                <p>Final Project of the #SePrograma course.</br>
+                    Technology used:
+                    Language: HTML,CSS y javascript.
+                </p>
+                <a href="https://ezequiel-verdecchia.github.io/"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="img/imagen-primer-plano-programador-trabajando-su-escritorio-oficina.jpg"alt="imagenDeProyecto5">
+            <div class="portfolio-layer">
+                <h4>Web Desing</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Beatae, voluptate perferendis iusto doloribus alias cumque reiciendis non porro modi quod tenetur maiores obcaecati dolor at quibusdam?
+                  Dignissimos incidunt quidem doloribus.
+                </p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="img/imagen-primer-plano-programador-trabajando-su-escritorio-oficina.jpg" alt="imagenDeProyecto6">
+            <div class="portfolio-layer">
+                <h4>Web Desing</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Beatae, voluptate perferendis iusto doloribus alias cumque reiciendis non porro modi quod tenetur maiores obcaecati dolor at quibusdam?
+                  Dignissimos incidunt quidem doloribus.
+                </p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
     </div>
  
-</div>
+
 </section>
 
-<!-- SECCION SKILLS -->
-<section class="skills" id="skills">
- <div class="header">
-    <h1>Skills</h1>
- </div>
- <div class="container">
-      <div class="skill-box">
-          <div class="skill-title">
-             <div class="img">
-                <div src="img/logo_C#.png" alt="logo_C#">
-            </div>
-             <h3>C#</h3>
-         </div>
-    </div>
+<!--contac section-->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
 
-       
-</section>
-
-<!-- SECCION CURRICULUM -->
-<section id="curriculum" class="curriculum">
-<div class="contenido-seccion">
-    <h2>Curriculum</h2>
-    <br><br>
-    <div class="fila">
-        <div class="col izquierda">
-            <h3>Educación</h3> 
-            <div class="item izq">
-                <h4>Terciario</h4>
-                <span class="casa">Instituto San Agustin</span>
-                <span class="fecha">2019 - 2022</span>
-                <p>Esta institucion me enseño mucho del mundo de la programación Backend, en la cual puede participar en muchos proyectos como por ejemplo: Base de datos, Carritos de compras, Paginas web comerciales y mucho mas </p>
-                <div class="conectori">
-                    <div class="circuloi"></div>
-                </div>
-            </div>
-            <div class="item izq">
-                <h4>Univercidad </h4>
-                <span class="casa">Universidad nacional de lanus</span>
-                <span class="fecha">2022 - acutualidad</span>
-                <p></p>
-                <div class="conectori">
-                    <div class="circuloi"></div>
-                </div>
-            </div>
-            <div class="item izq">
-                <h4>Curso</h4>
-                <span class="casa">Gobierno de la ciudad(#SePrograma)</span>
-                <span class="fecha">2022 - 2022</span>
-                <p>Curso muy interesante e interactivo, echo por el gobierno para ayudar a la educcación informatica, aprendi mucho y repase conocimientos tanto de Backend como de FrontEnd</p>
-                <div class="conectori">
-                    <div class="circuloi"></div>
-                </div>
-            </div>
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="Full name">
+            <input type="email" placeholder="Email Address">
         </div>
-
-        <!-- <div class="col derecha">
-            <h3>Proyectos Academicos</h3>
-            <div class="item der">
-                <h4>Front Developer</h4>
-                <span class="casa">Nombre de Compañía</span>
-                <span class="fecha">2005 - 2008</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                <div class="conectord">
-                    <div class="circulod"></div>
-                </div>
-            </div>
-            <div class="item der">
-                <h4>Academicasm</h4>
-                <span class="casa">Nombre de Compañía</span>
-                <span class="fecha">2005 - 2008</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                <div class="conectord">
-                    <div class="circulod"></div>
-                </div>
-            </div>
-            <div class="item der">
-                <h4>Front Developer</h4>
-                <span class="casa">Nombre de Compañía</span>
-                <span class="fecha">2005 - 2008</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                <div class="conectord">
-                    <div class="circulod"></div>
-                </div>
-            </div>
+        <div class="input-box">
+            <input type="number" placeholder="Mobile Number">
+            <input type="text" placeholder="Email Subject">
         </div>
-    </div> -->
-</div>
-</section>
-
-<!-- SECCION PORTFOLIO 
-<section id="portfolio" class="portfolio">
-<div class="contenido-seccion">
-    <h2>PORTFOLIO</h2>
-    <div class="galeria">
-        <div class="proyecto">
-            <img src="img/p1.jpg" alt="">
-            <div class="overlay">
-                <h3>Diseño Creativo</h3>
-                <p>Fotografía</p>
-            </div>
-        </div>
-        <div class="proyecto">
-            <img src="img/p2.jpg" alt="">
-            <div class="overlay">
-                <h3>Diseño Creativo</h3>
-                <p>Fotografía</p>
-            </div>
-        </div>
-        <div class="proyecto">
-            <img src="img/p3.jpg" alt="">
-            <div class="overlay">
-                <h3>Diseño Creativo</h3>
-                <p>Fotografía</p>
-            </div>
-        </div>
-        <div class="proyecto">
-            <img src="img/p4.jpg" alt="">
-            <div class="overlay">
-                <h3>Diseño Creativo</h3>
-                <p>Fotografía</p>
-            </div>
-        </div>
-        <div class="proyecto">
-            <img src="img/p5.jpg" alt="">
-            <div class="overlay">
-                <h3>Diseño Creativo</h3>
-                <p>Fotografía</p>
-            </div>
-        </div>
-        <div class="proyecto">
-            <img src="img/p6.jpg" alt="">
-            <div class="overlay">
-                <h3>Diseño Creativo</h3>
-                <p>Fotografía</p>
-            </div>
-        </div>
-    </div>
-</div>
-</section>-->
-
-<!-- SECCION CONTACTO -->
-<form action="https://formsubmit.co/ezequieltrabajo97@gmail.com" method="POST">
-<section id="contacto" class="contacto">
-<div class="contenido-seccion" >
-    <h2>CONTACTO</h2>
-    <div class="fila">
-        <!-- Formulario -->
-        <div class="col">
-            <input type="text" placeholder="Tú Nombre" required>
-            <input type="text" placeholder="Número telefónico">
-            <input type="email" placeholder="Dirección de correo" name="email" required>
-            <input type="text" placeholder="Tema">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-            <button>
-                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                <span class="overlay"></span>
-            </button>
-        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
     </form>
-        <!-- Mapa -->
-        <div class="col">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.1824309296508!2d-58.3997471843565!3d-34.72579568042804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccd6bcdaae17f%3A0x7da132b7790fc876!2sCnel.%20Beltr%C3%A1n%20190%2C%20B1823%20Remedios%20de%20Escalada%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1674608561683!5m2!1ses-419!2sar" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="info">
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Beltran 190, Buenos Aires
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-mobile-screen"></i>
-                        Llamame: 1133790221
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        Email: ezequieltrabajo97@gmail.com
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
 </section>
 
-<!-- footer -->
-<footer>
-<a href="#inicio" class="arriba">
-    <i class="fa-solid fa-angles-up"></i>
-</a>
-<div id="cv" class="cv">
-    <button>
-        Descargar CV <i class="fa-solid fa-download"></i>
-        <span class="overlay"></span>
-    </button>
-</div>
-<div class="redes">
-    <a target="_blank" href= "https://www.linkedin.com/in/ezequiel-verdecchia-398527196/"><i class="fa-brands fa-linkedin"></i></a>
-    <a target="_blank" href="https://www.instagram.com/ezequiel.verdecchia/"><i class="fa-brands fa-instagram"></i></a>
-    <a  target="_blank" href=" https://walink.co/51e078>"><i class="fa-brands fa-whatsapp"></i></a>
-</div>
+<!--footer-->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2023 by ezequiel | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
 </footer>
 
-<script src="script.js"></script>
-</body>
+<!-- scroll reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- typed js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<!-- custom js -->
+    <script src="script.js"></script>
+  </body>
 </html>
